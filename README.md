@@ -44,5 +44,38 @@ the relatively small medical imaging dataset.
 Improves generalisation on the minority classes (meningioma,
 notumor).
 
+Brain Tumor MRI Dataset — Kaggle
+masoudnickparvar/brain-tumor-mri-dataset
 
- 
+glioma --> Malignant tumour from glial cells
+meningioma --> Usually benign, arises from meninges
+notumor --> Healthy brain scan
+pituitary --> Tumour on the pituitary gland
+
+mri_tumor_classifier/
+├── config.py                   # All hyperparameters & paths
+├── requirements.txt
+├── README.md
+│
+├── src/
+│   ├── __init__.py
+│   ├── data_preprocessing.py   # Generators, tf.data pipeline, augmentation
+│   ├── model.py                # VGG16-NADE architecture (NADELayer, FeatureProjection)
+│   ├── train.py                # Two-phase training pipeline + CLI
+│   ├── evaluate.py             # Metrics, plots, Grad-CAM
+│   ├── predict.py              # Single/batch inference + MC-Dropout uncertainty
+│   └── utils.py                # Seeding, GPU setup, Kaggle download
+│
+├── notebooks/
+│   └── MRI_Brain_Tumor_VGG16_NADE.ipynb   # End-to-end walkthrough
+│
+├── data/
+│   ├── raw/                    # Kaggle dataset (Training/ + Testing/)
+│   └── processed/              # Reserved for future preprocessing artefacts
+│
+├── models/
+│   └── saved/                  # Keras .keras model checkpoints
+│
+└── results/
+    ├── plots/                  # Confusion matrix, ROC curves, Grad-CAM gallery
+    └── reports/                # Classification report JSON, training CSVs
