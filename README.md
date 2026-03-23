@@ -32,4 +32,17 @@ Input (224×224×3)
  │  Dense(4, softmax)                      │
  └─────────────────────────────────────────┘
 
+Why NADE?
+NADE models the joint distribution of features autoregressively:
+p(x) = ∏_d  p(x_d | x_{1:d-1})
+Applied after VGG16's feature extraction, it:
+
+Learns the density of the feature distribution, acting as a
+learned regulariser on top of the CNN representations.
+Provides an auxiliary density loss that combats overfitting on
+the relatively small medical imaging dataset.
+Improves generalisation on the minority classes (meningioma,
+notumor).
+
+
  
