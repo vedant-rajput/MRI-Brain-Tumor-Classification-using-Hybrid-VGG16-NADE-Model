@@ -20,21 +20,21 @@ Input (224×224×3)
       │
  ┌────▼──────────────────────────────────────────────┐
  │  Feature Projection  →  NADE_INPUT_DIM (512,)     │
- │  L2-normalised                                     │
+ │  L2-normalised                                    │
  └────┬──────────────────────────────────────────────┘
       │
  ┌────▼────────────────────────────────────────────────────┐
  │  NADE Module                                            │
- │  ─ K autoregressive masked passes over feature vector  │
- │  ─ Produces density-regularised representation         │
+ │  ─ K autoregressive masked passes over feature vector   │
+ │  ─ Produces density-regularised representation          │
  │  ─ Adds auxiliary BCE density loss to total loss        │
  └────┬────────────────────────────────────────────────────┘
       │  Concatenate [projection ‖ NADE repr]
       │
  ┌────▼────────────────────────────────────┐
  │  Classification Head                    │
- │  Dense(256) → BN → Dropout(0.4)        │
- │  Dense(128) → BN → Dropout(0.3)        │
+ │  Dense(256) → BN → Dropout(0.4)         │
+ │  Dense(128) → BN → Dropout(0.3)         │
  │  Dense(4, softmax)                      │
  └─────────────────────────────────────────┘
 ```
