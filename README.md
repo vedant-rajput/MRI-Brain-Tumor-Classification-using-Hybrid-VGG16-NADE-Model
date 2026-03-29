@@ -105,6 +105,12 @@ mri_tumor_classifier/
     └── reports/                # Classification report JSON, training CSVs
 ```
 Since, vgg16_nade_best.keras is 127.99 (Model) MB and GitHub has a 100 MB file size limit. Make sure to download it from here, and then past the complete folder according to the  project architechture.
+If your only able to download the (vgg16_nade_best.keras), after downloading it
+Follow these steps:
+
+--> Create a new folder on your desktop called as models
+--> indside the models folder create another folder named 'saved'
+--> then past the downloaded file vgg16_nade_best.keras
 
 https://drive.google.com/drive/folders/1MjVva21p1Sa9p_S19gtK298Yt8Xh0P7b?usp=sharing
 
