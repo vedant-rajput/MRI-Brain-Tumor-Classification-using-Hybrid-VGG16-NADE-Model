@@ -104,6 +104,9 @@ mri_tumor_classifier/
     ├── plots/                  # Confusion matrix, ROC curves, Grad-CAM gallery
     └── reports/                # Classification report JSON, training CSVs
 ```
+Since, vgg16_nade_best.keras is 127.99 (Model) MB and GitHub has a 100 MB file size limit. Make sure to download it from here, and then past the complete folder accordin to the architechture.
+
+https://drive.google.com/drive/folders/1MjVva21p1Sa9p_S19gtK298Yt8Xh0P7b?usp=sharing
 
 ---
 
