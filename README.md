@@ -110,7 +110,7 @@ Follow these steps:
 
 --> Create a new folder on your desktop called as models
 --> indside the models folder create another folder named 'saved'
---> then past the downloaded file vgg16_nade_best.keras
+--> then paste the downloaded file vgg16_nade_best.keras
 
 https://drive.google.com/drive/folders/1MjVva21p1Sa9p_S19gtK298Yt8Xh0P7b?usp=sharing
 
