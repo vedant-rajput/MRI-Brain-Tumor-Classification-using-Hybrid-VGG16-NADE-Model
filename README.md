@@ -104,6 +104,10 @@ mri_tumor_classifier/
     ├── plots/                  # Confusion matrix, ROC curves, Grad-CAM gallery
     └── reports/                # Classification report JSON, training CSVs
 ```
+My first formal exposure to research came at JNTUH, where I worked under faculty supervision in the Department of Computer Science & Engineering on a hybrid deep learning architecture for MRI brain tumour classification. The core research question fascinated me: could generative distribution modelling, traditionally used for density estimation, be fused with a discriminative CNN feature extractor to outperform standard computer vision architectures in low-data medical imaging settings? I designed and executed the experimental pipeline combining VGG16 transfer learning with Neural Autoregressive Distribution Estimation (NADE), ultimately achieving 97% multi-class classification accuracy a 7-percentage-point improvement over the VGG16 baseline.
+
+Beyond the model itself, I learned what rigorous research actually demands: extensive literature review, reproducible training pipelines, careful data augmentation strategy, and writing that survives peer review. The work was published at the 3rd International Conference on Innovations and Recent Trends in Computer Science (ICIRTCS-23-064) in December 2023, marking my first peer-reviewed publication. This experience shaped how I approach every project since domain-aware, hypothesis-driven, and obsessed with making results reproducible. It's the reason my later work on NASA geomagnetic forecasting leaned on physics-informed features rather than raw inputs, and why I treat experimental rigor as non-negotiable.
+
 Since, vgg16_nade_best.keras is 127.99 MB (Model) and GitHub has a 100 MB file size limit. Make sure to download it from the link below, and then past the complete folder according to the project architechture.
 
 If your only able to download the (vgg16_nade_best.keras), after downloading it
